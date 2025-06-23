@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Carrega os dados básicos (população, regional, etc.)
 function loadBairroData(bairroNome) {
     // Busca no banco de dados de bairros pelo nome
-    fetch(`http://pron-co-vo.onrender.com/banco-dados-bairros?nome=${encodeURIComponent(bairroNome)}`)
+    fetch(`https://pron-co-vo.onrender.com/banco-dados-bairros?nome=${encodeURIComponent(bairroNome)}`)
         .then(response => response.json())
         .then(bairros => {
             if (bairros.length > 0) {
@@ -47,7 +47,7 @@ function loadBairroData(bairroNome) {
 
 // Carrega a lista de equipamentos públicos
 function loadEquipamentos(bairroNome) {
-    fetch(`http://pron-co-vo.onrender.com/equipamentosPublicos?properties.bairro=${encodeURIComponent(bairroNome)}`)
+    fetch(`https://pron-co-vo.onrender.com/equipamentosPublicos?properties.bairro=${encodeURIComponent(bairroNome)}`)
         .then(response => response.json())
         .then(equipamentos => {
             const container = document.getElementById('equipamentos-container');
@@ -72,7 +72,7 @@ function loadEquipamentos(bairroNome) {
 
 // **FUNÇÃO CORRIGIDA: Carrega e CALCULA A MÉDIA das avaliações**
 function loadAvaliacoes(bairroNome) {
-    fetch(`http://pron-co-vo.onrender.com/respostas?bairro=${encodeURIComponent(bairroNome)}`)
+    fetch(`https://pron-co-vo.onrender.com/respostas?bairro=${encodeURIComponent(bairroNome)}`)
         .then(response => response.json())
         .then(avaliacoesDoBairro => {
             const container = document.querySelector('.avaliacoes');
@@ -117,7 +117,7 @@ function loadAvaliacoes(bairroNome) {
 
 // Carrega a lista de comentários
 function loadComentarios(bairroNome) {
-    fetch(`http://pron-co-vo.onrender.com/comentarios?bairro=${encodeURIComponent(bairroNome)}`)
+    fetch(`https://pron-co-vo.onrender.com/comentarios?bairro=${encodeURIComponent(bairroNome)}`)
         .then(response => response.json())
         .then(comentarios => {
             const container = document.getElementById('comentarios-container');

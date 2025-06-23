@@ -1,5 +1,5 @@
 // Configurações
-const API_URL = "http://pron-co-vo.onrender.com/respostas"; // Endpoint da API
+const API_URL = "https://pron-co-vo.onrender.com/respostas"; // Endpoint da API
 const ATUALIZAR_A_CADA = 5000; // 5 segundos
 
 // Mapeia os IDs para nomes amigáveis

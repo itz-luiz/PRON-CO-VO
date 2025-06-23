@@ -13,7 +13,7 @@ const criteriosDeAvaliacao = [
 // Elementos HTML importantes
 const quizContainer = document.getElementById("quizContainer"); // Onde as perguntas serão colocadas
 const mensagem = document.getElementById("mensagem"); // Para mostrar mensagens ao usuário
-const API_URL = "http://pron-co-vo.onrender.com/respostas"; // Endereço da API para salvar as respostas
+const API_URL = "https://pron-co-vo.onrender.com/respostas"; // Endereço da API para salvar as respostas
 
 // Objeto para guardar as respostas do usuário
 let respostas = {};

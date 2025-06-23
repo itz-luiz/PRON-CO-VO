@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Fetch slides from json-server
     function fetchSlides() {
-        fetch('http://pron-co-vo.onrender.com/eventos')
+        fetch('https://pron-co-vo.onrender.com/eventos')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Erro na requisição');
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const currentSlideId = slides[currentIndex].id;
 
         if (confirm('Tem certeza que deseja excluir este evento?')) {
-            fetch(`http://pron-co-vo.onrender.com/eventos/${currentSlideId}`, {
+            fetch(`https://pron-co-vo.onrender.com/eventos/${currentSlideId}`, {
                 method: 'DELETE'
             })
             .then(response => {

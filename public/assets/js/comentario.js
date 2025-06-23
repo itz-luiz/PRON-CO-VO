@@ -1,6 +1,6 @@
 // Elementos HTML importantes
 const mensagem = document.getElementById("mensagem");
-const API_URL = "http://pron-co-vo.onrender.com/comentarios";
+const API_URL = "https://pron-co-vo.onrender.com/comentarios";
 
 // Quando a página terminar de carregar, verifica o servidor
 document.addEventListener("DOMContentLoaded", () => {

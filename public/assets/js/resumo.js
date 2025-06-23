@@ -1,4 +1,4 @@
-const API_URL = "http://pron-co-vo.onrender.com/comentarios";
+const API_URL = "https://pron-co-vo.onrender.com/comentarios";
 const ATUALIZAR_A_CADA = 5000;
 
 function formatarData(dataString) {
