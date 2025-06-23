@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação de Bairros - Comentários</title>
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/comentarios.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Deixe seu Comentário sobre o Bairro</h2>
+    
+    <form id="comentario-form">
+      <div class="form-group">
+        <label>Seu bairro:</label>
+        <select id="bairro" required>
+         <option value="">-- Escolha --</option>
+          <option value="Primeiro de Maio">Primeiro de maio</option>
+          <option value="Padre Eustaquio">Padre Eustaquio</option>
+          <option value="São Gabriel">São Gabriel</option>
+          <option value="Santa Tereza">Santa Tereza</option>
+          <option value="Prado">Prado</option>
+          <option value="Savassi">Savassi</option>
+          <option value="Barreiro de baixo">Barreiro de baixo</option>
+          <option value="Santa Amelia">Santa Amelia</option>
+          <option value="Mantiquera">Mantiquera</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="nome">Seu nome (opcional):</label>
+        <input type="text" id="nome" placeholder="Deixe em branco para permanecer anônimo">
+      </div>
+
+      <div class="form-group">
+        <label for="comentario">Seu comentário:</label>
+        <textarea id="comentario" rows="5" required placeholder="Conte sua experiência com o bairro..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>
+          <input type="checkbox" id="anonimo"> Enviar como anônimo
+        </label>
+      </div>
+      
+      <button type="submit">Enviar Comentário</button>
+      
+      <div id="mensagem"></div>
+    </form>
+    
+    <a href="resumo.html" class="botao-resumo">Ver Todos os Comentários</a>
+
+    <!-- Botão para voltar ao mapa -->
+    <a href="mapa.html" class="botao-resumo">Voltar para o mapa</a>
+  </div>
+
+  <script src="./assets/js/comentario.js"></script>
+</body>
+</html>

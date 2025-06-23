@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços em BH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style-crude.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h1 class="text-center mb-0">Serviços por Bairro em BH</h1>
+                <button id="btnAdicionar" class="btn btn-success mt-3">Adicionar Serviço</button>
+            </div>
+            <div class="card-body">
+                <div class="row mb-4">
+                    <div class="col-md-8">
+                        <select id="selectBairro" class="form-select">
+                            <option value="" selected disabled>Selecione um bairro</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <button id="btnBuscar" class="btn btn-primary w-100">Buscar Serviços</button>
+                    </div>
+                </div>
+
+                <div id="resultado" class="d-none">
+                    <h2 id="nomeBairro" class="text-center mb-4"></h2>
+                    <div id="listaServicos" class="row"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para adicionar serviço -->
+    <div class="modal fade" id="adicionarModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Adicionar Novo Serviço</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formServico">
+                        <div class="mb-3">
+                            <label for="novoBairro" class="form-label">Bairro</label>
+                            <select class="form-select" id="novoBairro" required>
+                                <option value="" selected disabled>Selecione um bairro</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="novaCategoria" class="form-label">Categoria</label>
+                            <input type="text" class="form-control" id="novaCategoria" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="novoNome" class="form-label">Nome do Estabelecimento</label>
+                            <input type="text" class="form-control" id="novoNome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="novoEndereco" class="form-label">Endereço</label>
+                            <input type="text" class="form-control" id="novoEndereco" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="novoTelefone" class="form-label">Telefone</label>
+                            <input type="text" class="form-control" id="novoTelefone" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" id="btnConfirmarAdicao" class="btn btn-primary">Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

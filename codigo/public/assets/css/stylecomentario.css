@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 30px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+h2 {
+  color: #444;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+select, input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  padding: 12px 20px;
+  width: 100%;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+#mensagem {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.botao-resumo {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.botao-resumo:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para a página de resumo */
+#filtros {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+#filtros label {
+  margin-right: 10px;
+}
+
+.bairro {
+  margin-bottom: 30px;
+}
+
+.bairro h2 {
+  text-align: left;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+.comentario {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cabecalho-comentario {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.autor {
+  font-weight: bold;
+  color: #2980b9;
+}
+
+.texto-comentario {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.erro {
+  color: #e74c3c;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+  
+  .cabecalho-comentario {
+    flex-direction: column;
+  }
+  
+  .data {
+    margin-top: 5px;
+    font-size: 0.8em;
+  }
+}

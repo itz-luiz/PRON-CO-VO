@@ -1,0 +1,196 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 30px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+h2 {
+  color: #444;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #555;
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.star {
+  color: #ccc;
+  transition: 0.2s;
+}
+
+.star.selected,
+.star.hover {
+  color: gold;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  padding: 12px 20px;
+  width: 100%;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+#mensagem {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.botao-resumo {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.botao-resumo:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para a página de resumo */
+.bairro-resumo {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.medias {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.lista-medias {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lista-medias li {
+  margin-bottom: 8px;
+  padding: 8px;
+  background-color: #f0f8ff;
+  border-radius: 4px;
+}
+
+.respostas {
+  margin-top: 20px;
+}
+
+.lista-respostas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.resposta-item {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.resposta-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.resposta-item li {
+  margin-bottom: 5px;
+  padding: 3px 0;
+}
+
+.data-resposta {
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+}
+
+.estrelas-resumo {
+  color: gold;
+  letter-spacing: 2px;
+}
+
+.separador {
+  border: none;
+  border-top: 1px dashed #ccc;
+  margin: 30px 0;
+}
+
+.erro-carregamento {
+  color: #dc3545;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+  
+  .lista-respostas {
+    grid-template-columns: 1fr;
+  }
+}

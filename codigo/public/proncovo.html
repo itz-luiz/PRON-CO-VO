@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PronCoVô - Explore os Bairros de BH</title>
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/proncovo.css" />
+  <link rel="stylesheet" href="./assets/css/styles-carrossel.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="titulo">
+      <h1><a href="proncovo.html">PRON CO VÔ</a></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="proncovo.html">Home</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="mapa.html">Mapa</a></li>
+      </ul>
+    </nav>
+    <div class="user-info-container">
+        <div id="userInfo"><a href="modulos/login/login.html">Entrar</a></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Explore, Descubra e Viva Belo Horizonte</h1>
+        <p class="hero-subtitle">Encontre o bairro ideal para você com base em avaliações, segurança e infraestrutura.</p>
+        <div class="hero-search">
+          <input type="text" placeholder="Digite o nome de um bairro para começar...">
+          <button id="hero-search-btn">Buscar</button>
+          <div id="search-suggestions" class="suggestions-container"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="carousel-container">
+      <div class="carousel" id="carousel"></div>
+      <div class="carousel-indicators" id="indicators"></div>
+      <div class="slide-actions" id="slideActions">
+        <button class="action-btn update-btn">Editar</button>
+        <button class="action-btn delete-btn">Excluir</button>
+      </div>
+      <button class="prev" aria-label="Slide anterior">&#10094;</button>
+      <button class="next" aria-label="Próximo slide">&#10095;</button>
+    </div>
+
+    <section id="destaques">
+        <h2 class="section-title">Bairros em Destaque</h2>
+        <div class="bairros-container">
+            <div class="bairro-card" data-bairro="Savassi">
+                <img src="./assets/images/savassi.webp" alt="Bairro Savassi">
+                <div class="card-content">
+                    <h3>Savassi</h3>
+                    <p class="bairro-descricao">Centro da moda, cultura e gastronomia. Um bairro vibrante que pulsa com lojas, cafés e uma vida noturna agitada.</p>
+                    <div class="rating"></div>
+                    <a href="resumo.html" class="btn-detalhes">Ver mais Comentários</a>
+                </div>
+            </div>
+            <div class="bairro-card" data-bairro="Santa Tereza">
+                <img src="./assets/images/santa-tereza.jpg" alt="Bairro Santa Tereza">
+                <div class="card-content">
+                    <h3>Santa Tereza</h3>
+                    <p class="bairro-descricao">Coração boêmio de BH, famoso por seus bares tradicionais, vida cultural intensa e berço do Clube da Esquina.</p>
+                    <div class="rating"></div>
+                    <a href="resumo.html" class="btn-detalhes">Ver mais Comentários</a>
+                </div>
+            </div>
+            <div class="bairro-card" data-bairro="Prado">
+                <img src="./assets/images/prado.png" alt="Bairro Prado">
+                <div class="card-content">
+                    <h3>Prado</h3>
+                    <p class="bairro-descricao">Um dos bairros mais tradicionais, combinando tranquilidade residencial com fácil acesso a comércios e serviços essenciais.</p>
+                    <div class="rating"></div>
+                    <a href="resumo.html" class="btn-detalhes">Ver mais Comentários</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h2 class="section-title">Explore Nosso Catálogo</h2>
+    <div class="Catalogo-container">
+      <a href="bairros.html" class="catalogo">
+        <article>
+          <img src="./assets/images/bairros-populares.jpg" alt="Bairros populares">
+          <h2>Bairros Populares</h2>
+        </article>
+      </a>
+      <a href="mapa.html" class="catalogo">
+        <article>
+          <img src="./assets/images/mapa.jpg" alt="Mapa">
+          <h2>Mapa Interativo</h2>
+        </article>
+      </a>
+      <a href="avaliacao.html" class="catalogo">
+        <article>
+          <img src="./assets/images/avaliação.png" alt="Avaliação">
+          <h2>Avaliação</h2>
+        </article>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PRON CO VO - Feito com ❤️ em Belo Horizonte</p>
+  </footer>
+
+  <script src="./assets/js/login.js" defer></script>
+  <script src="./assets/js/carrossel-eventos.js" defer></script>
+  <script src="./assets/js/atualizar-ratings.js" defer></script>
+  <script src="./assets/js/pesquisa.js" defer></script>
+</body>
+</html>

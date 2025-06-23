@@ -1,0 +1,891 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "login": "admin",
+      "senha": "123",
+      "nome": "Administrador do Sistema",
+      "email": "admin@abc.com"
+    },
+    {
+      "id": "2",
+      "login": "user",
+      "senha": "123",
+      "nome": "Usuario Comum",
+      "email": "user@abc.com"
+    },
+    {
+      "login": "rommel",
+      "senha": "123",
+      "nome": "Rommel",
+      "email": "rommel@gmail.com",
+      "id": "3"
+    }
+  ],
+  "eventos": [
+    {
+      "id": "1",
+      "title": "Expo RH Indaiatuba 2025",
+      "subtitle": "O MAIOR evento de gestão de pessoas do interior paulista!",
+      "date": "17/10/2025",
+      "image": "./assets/images/eventos/expo-rh.png"
+    },
+    {
+      "id": "2",
+      "title": "10/06 2.2 do Gabiru",
+      "subtitle": "Um rolê exclusivo pra universitários – se tu é da quebrada acadêmica, já sabe.",
+      "date": "10/06/2025",
+      "image": "./assets/images/eventos/gabiru.jpg"
+    },
+    {
+      "id": "3",
+      "title": "ExpoAgro GV",
+      "subtitle": "Um dos eventos mais tradicionais e significativos da cidade de Governador Valadares.",
+      "date": "04/07/2025 a 13/07/2025",
+      "image": "./assets/images/eventos/expoagro-gv.png"
+    },
+    {
+      "id": "4",
+      "title": "Sambinha da Gigóia com Belo",
+      "subtitle": "Edição especial com Belo e Pagode do Adame",
+      "date": "09/06/2025",
+      "image": "./assets/images/eventos/sambinha-da-gigoia.jpeg"
+    }
+  ],
+  "equipamentosPublicos": [
+    {
+      "id": "1",
+      "properties": {
+        "name": "Biblioteca Pública Estadual de Minas Gerais",
+        "description": "Acesso à leitura e informação.",
+        "category": "biblioteca",
+        "address": "Praça da Liberdade, 21 - Funcionários",
+        "bairro": "Funcionários",
+        "latitude": -19.9321,
+        "longitude": -43.9375
+      }
+    },
+    {
+      "id": "2",
+      "properties": {
+        "name": "Escola Estadual Governador Milton Campos",
+        "description": "Ensino médio e fundamental.",
+        "category": "escola",
+        "address": "Rua Paraíba, 1731 - Funcionários",
+        "bairro": "Funcionários",
+        "latitude": -19.938,
+        "longitude": -43.9342
+      }
+    },
+    {
+      "id": "3",
+      "properties": {
+        "name": "Posto de Saúde Funcionários",
+        "description": "Atendimento básico de saúde.",
+        "category": "posto-saude",
+        "address": "Rua Timbiras, 1220 - Funcionários",
+        "bairro": "Funcionários",
+        "latitude": -19.935,
+        "longitude": -43.937
+      }
+    },
+    {
+      "id": "4",
+      "properties": {
+        "name": "Delegacia Regional Centro-Sul",
+        "description": "Segurança pública.",
+        "category": "delegacia",
+        "address": "Rua Bernardo Guimarães, 1600 - Funcionários",
+        "bairro": "Funcionários",
+        "latitude": -19.9338,
+        "longitude": -43.9395
+      }
+    },
+    {
+      "id": "5",
+      "properties": {
+        "name": "Centro Cultural Banco do Brasil",
+        "description": "Centro de cultura e exposições.",
+        "category": "centro-cultural",
+        "address": "Praça da Liberdade, 450 - Funcionários",
+        "bairro": "Funcionários",
+        "latitude": -19.9333,
+        "longitude": -43.936
+      }
+    },
+    {
+      "id": "6",
+      "properties": {
+        "name": "Hospital Santa Tereza",
+        "description": "Atendimento médico especializado.",
+        "category": "hospital",
+        "address": "Rua Mármore, 450 - Santa Tereza",
+        "bairro": "Santa Tereza",
+        "latitude": -19.9254,
+        "longitude": -43.9152
+      }
+    },
+    {
+      "id": "7",
+      "properties": {
+        "name": "Escola Municipal Hugo Werneck",
+        "description": "Ensino infantil e fundamental.",
+        "category": "escola",
+        "address": "Rua Mármore, 700 - Santa Tereza",
+        "bairro": "Santa Tereza",
+        "latitude": -19.926,
+        "longitude": -43.916
+      }
+    },
+    {
+      "id": "8",
+      "properties": {
+        "name": "UPA Leste",
+        "description": "Unidade de Pronto Atendimento.",
+        "category": "upa",
+        "address": "Rua Conselheiro Rocha, 3516 - Santa Tereza",
+        "bairro": "Santa Tereza",
+        "latitude": -19.9235,
+        "longitude": -43.912
+      }
+    },
+    {
+      "id": "9",
+      "properties": {
+        "name": "Centro Cultural Santa Tereza",
+        "description": "Espaço cultural e artístico.",
+        "category": "centro-cultural",
+        "address": "Rua Estrela do Sul, 89 - Santa Tereza",
+        "bairro": "Santa Tereza",
+        "latitude": -19.925,
+        "longitude": -43.9178
+      }
+    },
+    {
+      "id": "10",
+      "properties": {
+        "name": "CRAS Santa Tereza",
+        "description": "Atendimento social e cidadania.",
+        "category": "cras",
+        "address": "Rua Conselheiro Rocha, 1800 - Santa Tereza",
+        "bairro": "Santa Tereza",
+        "latitude": -19.9245,
+        "longitude": -43.9144
+      }
+    },
+    {
+      "id": "11",
+      "properties": {
+        "name": "Escola Municipal Floramar",
+        "description": "Educação fundamental.",
+        "category": "escola",
+        "address": "Rua Luiz Cabral, 122 - Floramar",
+        "bairro": "Floramar",
+        "latitude": -19.8287,
+        "longitude": -43.944
+      }
+    },
+    {
+      "id": "12",
+      "properties": {
+        "name": "Unidade Básica de Saúde Floramar",
+        "description": "Atendimento médico básico.",
+        "category": "ubs",
+        "address": "Rua Flor de Cactus, 300 - Floramar",
+        "bairro": "Floramar",
+        "latitude": -19.8292,
+        "longitude": -43.942
+      }
+    },
+    {
+      "id": "13",
+      "properties": {
+        "name": "Centro Comunitário Floramar",
+        "description": "Atividades sociais e comunitárias.",
+        "category": "centro-comunitario",
+        "address": "Rua José Clemente, 80 - Floramar",
+        "bairro": "Floramar",
+        "latitude": -19.8275,
+        "longitude": -43.9435
+      }
+    },
+    {
+      "id": "14",
+      "properties": {
+        "name": "Parque Floramar",
+        "description": "Área verde pública.",
+        "category": "parque",
+        "address": "Rua das Papoulas, s/n - Floramar",
+        "bairro": "Floramar",
+        "latitude": -19.828,
+        "longitude": -43.9452
+      }
+    },
+    {
+      "id": "15",
+      "properties": {
+        "name": "Centro de Referência da Juventude Floramar",
+        "description": "Projetos sociais para jovens.",
+        "category": "juventude",
+        "address": "Rua Orquídea Azul, 90 - Floramar",
+        "bairro": "Floramar",
+        "latitude": -19.8278,
+        "longitude": -43.9449
+      }
+    },
+    {
+      "id": "16",
+      "properties": {
+        "name": "Centro de Saúde Barreiro",
+        "description": "Atendimento básico à saúde.",
+        "category": "ubs",
+        "address": "Av. Sinfrônio Brochado, 639 - Barreiro",
+        "bairro": "Barreiro",
+        "latitude": -20.0185,
+        "longitude": -44.0155
+      }
+    },
+    {
+      "id": "17",
+      "properties": {
+        "name": "Escola Estadual Maria Carolina",
+        "description": "Educação fundamental e médio.",
+        "category": "escola",
+        "address": "Rua dos Industriários, 112 - Barreiro",
+        "bairro": "Barreiro",
+        "latitude": -20.017,
+        "longitude": -44.0142
+      }
+    },
+    {
+      "id": "18",
+      "properties": {
+        "name": "UPA Barreiro",
+        "description": "Pronto atendimento médico.",
+        "category": "upa",
+        "address": "Rua Pinheiro Chagas, 100 - Barreiro",
+        "bairro": "Barreiro",
+        "latitude": -20.016,
+        "longitude": -44.0165
+      }
+    },
+    {
+      "id": "19",
+      "properties": {
+        "name": "CRAS Barreiro",
+        "description": "Serviços sociais para a comunidade.",
+        "category": "cras",
+        "address": "Rua José Brandão, 55 - Barreiro",
+        "bairro": "Barreiro",
+        "latitude": -20.0192,
+        "longitude": -44.0133
+      }
+    },
+    {
+      "id": "20",
+      "properties": {
+        "name": "Centro Cultural Barreiro",
+        "description": "Atividades culturais e oficinas.",
+        "category": "centro-cultural",
+        "address": "Av. Afonso Vaz de Melo, 1001 - Barreiro",
+        "bairro": "Barreiro",
+        "latitude": -20.0181,
+        "longitude": -44.017
+      }
+    },
+    {
+      "id": "21",
+      "properties": {
+        "name": "Posto de Saúde Nova Suíça",
+        "description": "Unidade básica de saúde.",
+        "category": "ubs",
+        "address": "Rua Leopoldina, 800 - Nova Suíça",
+        "bairro": "Nova Suíça",
+        "latitude": -19.9441,
+        "longitude": -43.9745
+      }
+    },
+    {
+      "id": "22",
+      "properties": {
+        "name": "Escola Municipal Zilda Arns",
+        "description": "Educação infantil e fundamental.",
+        "category": "escola",
+        "address": "Rua Campos Elísios, 100 - Nova Suíça",
+        "bairro": "Nova Suíça",
+        "latitude": -19.9435,
+        "longitude": -43.976
+      }
+    },
+    {
+      "id": "23",
+      "properties": {
+        "name": "Centro de Apoio ao Cidadão",
+        "description": "Atendimento jurídico e serviços sociais.",
+        "category": "apoio-cidadao",
+        "address": "Rua Dom Oscar Romero, 60 - Nova Suíça",
+        "bairro": "Nova Suíça",
+        "latitude": -19.9447,
+        "longitude": -43.9738
+      }
+    },
+    {
+      "id": "24",
+      "properties": {
+        "name": "Delegacia da Mulher Oeste",
+        "description": "Atendimento policial especializado.",
+        "category": "delegacia",
+        "address": "Rua Helianto, 200 - Nova Suíça",
+        "bairro": "Nova Suíça",
+        "latitude": -19.9425,
+        "longitude": -43.9751
+      }
+    },
+    {
+      "id": "25",
+      "properties": {
+        "name": "Praça da Amizade",
+        "description": "Espaço de lazer e convivência.",
+        "category": "praca",
+        "address": "Rua Estrela Dalva, s/n - Nova Suíça",
+        "bairro": "Nova Suíça",
+        "latitude": -19.9438,
+        "longitude": -43.974
+      }
+    },
+    {
+      "id": "26",
+      "properties": {
+        "name": "Escola Estadual São Salvador",
+        "description": "Ensino fundamental.",
+        "category": "escola",
+        "address": "Rua São Salvador, 100 - São Salvador",
+        "bairro": "São Salvador",
+        "latitude": -19.89,
+        "longitude": -43.91
+      }
+    },
+    {
+      "id": "27",
+      "properties": {
+        "name": "UBS São Salvador",
+        "description": "Unidade básica de saúde.",
+        "category": "ubs",
+        "address": "Rua das Rosas, 200 - São Salvador",
+        "bairro": "São Salvador",
+        "latitude": -19.8905,
+        "longitude": -43.911
+      }
+    },
+    {
+      "id": "28",
+      "properties": {
+        "name": "CRAS Nordeste",
+        "description": "Atendimento social à comunidade.",
+        "category": "cras",
+        "address": "Av. Santa Rosa, 450 - São Salvador",
+        "bairro": "São Salvador",
+        "latitude": -19.891,
+        "longitude": -43.912
+      }
+    },
+    {
+      "id": "29",
+      "properties": {
+        "name": "Biblioteca Comunitária São Salvador",
+        "description": "Promoção à leitura e estudo.",
+        "category": "biblioteca",
+        "address": "Rua Camélias, 50 - São Salvador",
+        "bairro": "São Salvador",
+        "latitude": -19.892,
+        "longitude": -43.9105
+      }
+    },
+    {
+      "id": "30",
+      "properties": {
+        "name": "Parque São Salvador",
+        "description": "Lazer e práticas esportivas.",
+        "category": "parque",
+        "address": "Rua das Palmeiras, s/n - São Salvador",
+        "bairro": "São Salvador",
+        "latitude": -19.8915,
+        "longitude": -43.9115
+      }
+    },
+    {
+      "id": "31",
+      "properties": {
+        "name": "Centro de Saúde Buritis",
+        "description": "Atendimento à população local.",
+        "category": "ubs",
+        "address": "Av. Professor Mário Werneck, 2050 - Buritis",
+        "bairro": "Buritis",
+        "latitude": -19.964,
+        "longitude": -43.9732
+      }
+    },
+    {
+      "id": "32",
+      "properties": {
+        "name": "Escola Estadual Ari da Franca",
+        "description": "Ensino básico e médio.",
+        "category": "escola",
+        "address": "Rua José Hemetério Andrade, 200 - Buritis",
+        "bairro": "Buritis",
+        "latitude": -19.963,
+        "longitude": -43.9745
+      }
+    },
+    {
+      "id": "33",
+      "properties": {
+        "name": "CRAS Oeste",
+        "description": "Assistência social e cidadania.",
+        "category": "cras",
+        "address": "Rua Eng. Godofredo, 170 - Buritis",
+        "bairro": "Buritis",
+        "latitude": -19.9645,
+        "longitude": -43.9728
+      }
+    },
+    {
+      "id": "34",
+      "properties": {
+        "name": "Biblioteca Pública Buritis",
+        "description": "Acesso à leitura e pesquisas.",
+        "category": "biblioteca",
+        "address": "Av. Aggeo Pio Sobrinho, 1200 - Buritis",
+        "bairro": "Buritis",
+        "latitude": -19.965,
+        "longitude": -43.9719
+      }
+    },
+    {
+      "id": "35",
+      "properties": {
+        "name": "Parque Aggeo Pio Sobrinho",
+        "description": "Natureza e lazer para a comunidade.",
+        "category": "parque",
+        "address": "Av. Professor Mário Werneck, s/n - Buritis",
+        "bairro": "Buritis",
+        "latitude": -19.966,
+        "longitude": -43.97
+      }
+    },
+    {
+      "id": "36",
+      "properties": {
+        "name": "Drogaria Araújo",
+        "description": "Telefone: (31) 3245-6789",
+        "category": "farmacia",
+        "address": "Av. do Contorno, 6061",
+        "bairro": "Savassi",
+        "latitude": -19.9348,
+        "longitude": -43.9395
+      }
+    },
+    {
+      "id": "37",
+      "properties": {
+        "name": "Drogaria Savassi",
+        "description": "Telefone: (31) 3234-5678",
+        "category": "farmacia",
+        "address": "Rua Pernambuco, 123",
+        "bairro": "Savassi",
+        "latitude": -19.9312,
+        "longitude": -43.9388
+      }
+    },
+    {
+      "id": "38",
+      "properties": {
+        "name": "Restaurante Xapuri",
+        "description": "Telefone: (31) 3287-1234",
+        "category": "restaurante",
+        "address": "Rua Mandacaru, 260",
+        "bairro": "Pampulha",
+        "latitude": -19.8622,
+        "longitude": -44.0069
+      }
+    },
+    {
+      "id": "39",
+      "properties": {
+        "name": "Auto Center Pampulha",
+        "description": "Telefone: (31) 4567-8901",
+        "category": "mecanica",
+        "address": "Av. Antônio Abrahão Caram, 789",
+        "bairro": "Pampulha",
+        "latitude": -19.8643,
+        "longitude": -43.9731
+      }
+    },
+    {
+      "id": "40",
+      "properties": {
+        "name": "Iate Tênis Clube",
+        "description": "Telefone: (31) 3441-1400",
+        "category": "lazer",
+        "address": "Av. José do Patrocínio Pontes, 1351",
+        "bairro": "Pampulha",
+        "latitude": -19.8553,
+        "longitude": -43.9839
+      }
+    },
+    {
+      "id": "41",
+      "properties": {
+        "name": "Shopping Cidade",
+        "description": "Telefone: (31) 3274-7000",
+        "category": "shopping",
+        "address": "Av. Augusto de Lima, 744",
+        "bairro": "Centro",
+        "latitude": -19.9221,
+        "longitude": -43.9449
+      }
+    },
+    {
+      "id": "42",
+      "properties": {
+        "name": "Hotel Boulevard",
+        "description": "Telefone: (31) 3241-9999",
+        "category": "hotel",
+        "address": "Rua dos Tamoios, 341",
+        "bairro": "Centro",
+        "latitude": -19.9213,
+        "longitude": -43.9405
+      }
+    }
+  ],
+  "comentarios": [
+    {
+      "id": "ec90",
+      "bairro": "Primeiro de Maio",
+      "comentario": "Adoro a praça do bairro, sempre bem cuidada e ótima para relaxar.",
+      "anonimo": false,
+      "data": "2025-06-17T20:51:37.324Z",
+      "nome": "Carla Silva"
+    },
+    {
+      "id": "ea90",
+      "bairro": "Santa Tereza",
+      "comentario": "A vida noturna em Santa Tereza é incrível! Muitos bares e restaurantes bons.",
+      "anonimo": true,
+      "data": "2025-06-17T20:54:00.369Z",
+      "nome": "Anônimo"
+    },
+    {
+      "id": "8a6b",
+      "bairro": "Santa Amelia",
+      "comentario": "O trânsito aqui tem melhorado bastante nos últimos meses, mas ainda precisa de mais ciclovias.",
+      "anonimo": false,
+      "data": "2025-06-17T21:28:48.439Z",
+      "nome": "João Pedro"
+    },
+    {
+      "id": "7483",
+      "bairro": "Padre Eustaquio",
+      "comentario": "As feiras de rua no Padre Eustáquio são um charme à parte, com muita variedade.",
+      "anonimo": false,
+      "data": "2025-06-17T21:33:48.000Z",
+      "nome": "Mariana Souza"
+    },
+    {
+      "id": "a023",
+      "bairro": "Padre Eustaquio",
+      "comentario": "A escola pública do bairro é excelente, meus filhos estudam lá e o ensino é de qualidade.",
+      "anonimo": false,
+      "data": "2025-06-17T21:34:48.989Z",
+      "nome": "Fernanda Lima"
+    },
+    {
+      "id": "1885",
+      "bairro": "Primeiro de Maio",
+      "comentario": "Sinto falta de mais opções de transporte público direto para o centro.",
+      "anonimo": true,
+      "data": "2025-06-17T21:59:09.483Z",
+      "nome": "Anônimo"
+    },
+    {
+      "id": "2486",
+      "bairro": "Savassi",
+      "comentario": "A Savassi é perfeita para quem gosta de sair à noite, muitas opções de bares e baladas.",
+      "anonimo": false,
+      "data": "2025-06-20T16:10:18.737Z",
+      "nome": "Lucas Oliveira"
+    },
+    {
+      "id": "58f7",
+      "bairro": "Padre Eustaquio",
+      "comentario": "Gostaria que tivesse mais áreas verdes e parques aqui.",
+      "anonimo": true,
+      "data": "2025-06-20T16:10:38.629Z",
+      "nome": "Anônimo"
+    },
+    {
+      "id": "8a16",
+      "bairro": "Santa Amelia",
+      "comentario": "É um bairro bem tranquilo para morar, ideal para famílias.",
+      "anonimo": true,
+      "data": "2025-06-22T18:41:56.587Z",
+      "nome": "Anônimo"
+    },
+    {
+      "id": "eacc",
+      "bairro": "Prado",
+      "comentario": "A segurança melhorou muito, me sinto mais tranquilo andando nas ruas.",
+      "anonimo": false,
+      "data": "2025-06-22T18:42:20.946Z",
+      "nome": "Patrícia Costa"
+    },
+    {
+      "id": "17ab",
+      "bairro": "São Gabriel",
+      "comentario": "O comércio local é bem forte, encontro tudo que preciso sem sair do bairro.",
+      "anonimo": false,
+      "data": "2025-06-22T18:45:08.436Z",
+      "nome": "Ricardo Pereira"
+    },
+    {
+      "id": "f52e",
+      "bairro": "Savassi",
+      "comentario": "Um bairro muito, ótimo para encontrar os amigos.",
+      "anonimo": false,
+      "data": "2025-06-22T23:12:36.284Z",
+      "nome": "Luiz Felipe"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "0ab2",
+      "bairro": "Padre Eustaquio",
+      "seguranca": 4,
+      "escolas": 2,
+      "saude": 5,
+      "mobilidade": 3,
+      "transporte": 3,
+      "limpeza": 5,
+      "iluminacao": 3,
+      "lazer": 4,
+      "data": "2025-06-17T20:47:43.113Z"
+    },
+    {
+      "id": "d556",
+      "bairro": "Santa Tereza",
+      "seguranca": 3,
+      "escolas": 2,
+      "saude": 5,
+      "mobilidade": 3,
+      "transporte": 2,
+      "limpeza": 5,
+      "iluminacao": 3,
+      "lazer": 2,
+      "data": "2025-06-17T21:32:53.763Z"
+    },
+    {
+      "id": "a631",
+      "bairro": "Padre Eustaquio",
+      "seguranca": 3,
+      "escolas": 2,
+      "saude": 5,
+      "mobilidade": 2,
+      "transporte": 4,
+      "limpeza": 2,
+      "iluminacao": 3,
+      "lazer": 1,
+      "data": "2025-06-20T16:09:43.596Z"
+    },
+    {
+      "id": "ae2b",
+      "bairro": "Santa Tereza",
+      "seguranca": 1,
+      "escolas": 4,
+      "saude": 5,
+      "mobilidade": 3,
+      "transporte": 5,
+      "limpeza": 3,
+      "iluminacao": 4,
+      "lazer": 5,
+      "data": "2025-06-20T23:51:14.455Z"
+    },
+    {
+      "id": "1558",
+      "bairro": "Savassi",
+      "seguranca": 5,
+      "escolas": 3,
+      "saude": 5,
+      "mobilidade": 2,
+      "transporte": 5,
+      "limpeza": 3,
+      "iluminacao": 2,
+      "lazer": 5,
+      "data": "2025-06-21T19:43:43.932Z"
+    },
+    {
+      "id": "8926",
+      "bairro": "Savassi",
+      "seguranca": 2,
+      "escolas": 3,
+      "saude": 2,
+      "mobilidade": 5,
+      "transporte": 2,
+      "limpeza": 2,
+      "iluminacao": 4,
+      "lazer": 5,
+      "data": "2025-06-21T19:44:02.833Z"
+    },
+    {
+      "id": "380d",
+      "bairro": "Prado",
+      "seguranca": 4,
+      "escolas": 5,
+      "saude": 5,
+      "mobilidade": 3,
+      "transporte": 4,
+      "limpeza": 3,
+      "iluminacao": 3,
+      "lazer": 4,
+      "data": "2025-06-22T18:43:29.168Z"
+    }
+  ],
+  "banco-dados-bairros": [
+    {
+      "id": "1",
+      "nome": "Primeiro de Maio",
+      "regional": "Norte",
+      "populacao-aproximada": "10.000",
+      "observacao": "Considerado uma referência cultural na região"
+    },
+    {
+      "id": "2",
+      "nome": "Padre Eustáquio",
+      "regional": "Noroeste",
+      "populacao-aproximada": "28.600",
+      "observacao": "Um dos bairros mais tradicionais e movimentados da região."
+    },
+    {
+      "id": "3",
+      "nome": "São Gabriel",
+      "regional": "Nordeste",
+      "populacao-aproximada": "27.900",
+      "observacao": "Importante polo comercial e de transporte da região."
+    },
+    {
+      "id": "4",
+      "nome": "Santa Tereza",
+      "regional": "Leste",
+      "populacao-aproximada": "15.600",
+      "observacao": "Conhecido por sua vida cultural e boêmia."
+    },
+    {
+      "id": "5",
+      "nome": "Prado",
+      "regional": "Oeste",
+      "populacao-aproximada": "9.000",
+      "observacao": "Bairro tradicional com infraestrutura consolidada."
+    },
+    {
+      "id": "6",
+      "nome": "Savassi",
+      "regional": "Centro-Sul",
+      "populacao-aproximada": "11.700",
+      "observacao": "Área nobre e centro de lazer e comércio"
+    },
+    {
+      "id": "7",
+      "nome": "Barreiro de Baixo",
+      "regional": "Barreiro",
+      "populacao-aproximada": "40.900",
+      "observacao": "Considerado o centro comercial da regional."
+    },
+    {
+      "id": "8",
+      "nome": "Santa Amélia",
+      "regional": "Pampulha",
+      "populacao-aproximada": "3.400",
+      "observacao": "Área residencial próxima à Lagoa da Pampulha."
+    },
+    {
+      "id": "9",
+      "nome": "Mantiqueira",
+      "regional": "Venda Nova",
+      "populacao-aproximada": "20.300",
+      "observacao": "Um dos bairros mais populosos da regional."
+    }
+  ],
+  "pontosDeTransporte": [
+    {
+      "id": "metro01",
+      "type": "metro",
+      "nome": "Estação Santa Tereza",
+      "bairro": "Santa Tereza",
+      "endereco": "R. Conselheiro Rocha, 3000",
+      "latitude": -19.9108,
+      "longitude": -43.9141
+    },
+    {
+      "id": "metro02",
+      "type": "metro",
+      "nome": "Estação Central",
+      "bairro": "Centro",
+      "endereco": "Praça da Estação, s/n",
+      "latitude": -19.9176,
+      "longitude": -43.9351
+    },
+    {
+      "id": "metro03",
+      "type": "metro",
+      "nome": "Estação Gameleira",
+      "bairro": "Gameleira",
+      "endereco": "Av. Amazonas, 8500",
+      "latitude": -19.9329,
+      "longitude": -43.9877
+    },
+    {
+      "id": "onibus01",
+      "type": "onibus",
+      "nome": "Ponto Av. do Contorno, 6287",
+      "bairro": "Savassi",
+      "endereco": "Av. do Contorno, 6287",
+      "latitude": -19.936,
+      "longitude": -43.939
+    },
+    {
+      "id": "onibus02",
+      "type": "onibus",
+      "nome": "Ponto R. Alagoas, 604",
+      "bairro": "Savassi",
+      "endereco": "R. Alagoas, 604",
+      "latitude": -19.933,
+      "longitude": -43.934
+    },
+    {
+      "id": "onibus03",
+      "type": "onibus",
+      "nome": "Ponto R. dos Timbiras, 1697",
+      "bairro": "Lourdes",
+      "endereco": "R. dos Timbiras, 1697",
+      "latitude": -19.931,
+      "longitude": -43.944
+    },
+    {
+      "id": "onibus04",
+      "type": "onibus",
+      "nome": "Ponto R. Mármore, 333",
+      "bairro": "Santa Tereza",
+      "endereco": "R. Mármore, 333",
+      "latitude": -19.911,
+      "longitude": -43.916
+    },
+    {
+      "id": "onibus05",
+      "type": "onibus",
+      "nome": "Ponto R. Platina, 841",
+      "bairro": "Prado",
+      "endereco": "R. Platina, 841",
+      "latitude": -19.924,
+      "longitude": -43.963
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+/* Importa a base de estilos do site */
+@import url("./base.css");
+
+/* --- ESTILO GLOBAL E FUNDO DA PÁGINA --- */
+body {
+    position: relative;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    padding-top: 80px; /* Espaço para o header fixo */
+    padding-bottom: 60px; /* Espaço para o footer */
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+    background-image: url('../images/fundo-bh.webp');
+    background-size: cover;
+    background-position: center center;
+    filter: blur(4px) brightness(0.6);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(26, 26, 26, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+
+/* --- CONTAINER PRINCIPAL (ESTILO CARD) --- */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.98);
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0056b3;
+}
+
+/* --- ESTILOS DO FORMULÁRIO --- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    font-size: 1rem;
+    box-sizing: border-box; 
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* --- BOTÕES E LINKS --- */
+button[type="submit"], .botao-resumo {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover, .botao-resumo:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 91, 179, 0.3);
+}
+
+a.botao-resumo {
+    background-color: #6c757d;
+}
+a.botao-resumo:hover {
+    background-color: #5a6268;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* --- ESTILOS DA PÁGINA DE RESUMO DE COMENTÁRIOS (RESUMO.HTML) --- */
+#filtros {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#resumo .bairro {
+    margin-bottom: 30px;
+}
+
+#resumo .bairro h2 {
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.comentario {
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.cabecalho-comentario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.autor {
+    font-weight: bold;
+    color: #343a40;
+}
+
+.data {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+.texto-comentario {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #495057;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interativo</title>
+    <link rel="stylesheet" href="./assets/css/styles-mapa.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+
+    <!-- Botão Voltar -->
+    <button class="return-btn" id="return-btn">Voltar para página principal</button>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+            <span class="close-btn" id="closeSidebar">&times;</span>
+        </div>
+        <ul class="menu">
+            <li><a href="#" class="menu-item" id="openCrud">Gerenciar Equipamentos</a></li>
+            <li><a href="#" class="menu-item" id="reloadMap">Recarregar Mapa</a></li>
+            <li><a href="#" class="menu-item" id="filterToggle">Filtrar por Categoria</a></li>
+            <li><a href="avaliacao.html" class="menu-item">Avaliar Bairro</a></li>
+            <li><a href="resumoaval.html" class="menu-item">Resultados das Avaliações</a></li>
+            <li><a href="comentario.html" class="menu-item">Deixar Comentário</a></li>
+            <li><a href="resumo.html" class="menu-item">Ver Comentários</a></li>
+            <li><a href="proncovo.html" class="menu-item">Pagina principal</a></li>
+        </ul>
+        <div class="category-filter" id="categoryFilter">
+            <h4>Filtrar Categorias</h4>
+            <div id="category-filters"></div>
+        </div>
+    </div>
+
+    <div class="crud-modal" id="crudModal">
+        <div class="crud-content">
+            <span class="close-btn" id="closeCrud">&times;</span>
+            <h2>Gerenciar Equipamentos Públicos</h2>
+            <form id="crudForm">
+                <input type="hidden" id="editId">
+                <input type="text" id="name" placeholder="Nome" required>
+                <input type="text" id="description" placeholder="Descrição">
+                <input type="text" id="address" placeholder="Endereço">
+                <input type="text" id="bairro" placeholder="Bairro">
+                <input type="text" id="latitude" placeholder="Latitude" required>
+                <input type="text" id="longitude" placeholder="Longitude" required>
+                <select id="category" required>
+                    <option value="">Selecione a Categoria</option>
+                </select>
+                <button type="submit">Salvar</button>
+            </form>
+            <h3>Lista de Equipamentos</h3>
+            <ul id="equipamentosList"></ul>
+        </div>
+    </div>
+
+    <!-- Container do mapa -->
+    <div class="map-container">
+        <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="./assets/js/mapa.js"></script>
+    <script>
+        // Botão voltar para página principal
+        document.getElementById('return-btn').addEventListener('click', function () {
+            window.location.href = 'proncovo.html';
+        });
+    </script>
+</body>
+
+</html>

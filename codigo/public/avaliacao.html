@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação de Bairros</title>
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/avaliacao.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Avalie seu Bairro</h2>
+    
+    <!-- Formulário principal -->
+    <form id="quiz-form">
+      <!-- Seleciona o bairro -->
+      <div class="form-group">
+        <label>Seu bairro:</label>
+        <select id="bairro" required>
+          <option value="">-- Escolha --</option>
+          <option value="Primeiro de Maio">Primeiro de maio</option>
+          <option value="Padre Eustaquio">Padre Eustaquio</option>
+          <option value="São Gabriel">São Gabriel</option>
+          <option value="Santa Tereza">Santa Tereza</option>
+          <option value="Prado">Prado</option>
+          <option value="Savassi">Savassi</option>
+          <option value="Barreiro de baixo">Barreiro de baixo</option>
+          <option value="Santa Amelia">Santa Amelia</option>
+          <option value="Mantiquera">Mantiquera</option>
+        </select>
+      </div>
+
+      <!-- Aqui vão aparecer as perguntas -->
+      <div id="quizContainer"></div>
+      
+      <!-- Botão para enviar -->
+      <button type="submit">Enviar Avaliação</button>
+      
+      <!-- Mensagem de status -->
+      <div id="mensagem"></div>
+    </form>
+
+    <!-- Link para ver os comentarios -->
+    <a href="comentario.html" class="botao-resumo">Adcionar comentario</a>
+    
+    <!-- Link para ver os resultados -->
+    <a href="resumoaval.html" class="botao-resumo">Ver Resultados</a>
+
+    <!-- Botão para voltar ao mapa -->
+    <a href="mapa.html" class="botao-resumo">Voltar para o mapa</a>
+  </div>
+
+  <script src="./assets/js/avaliacao.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - PRON CO VÔ</title>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/proncovo.css">
+    <link rel="stylesheet" href="../assets/css/perfil.css">
+    
+    <script src="../assets/js/login.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h1><a href="../proncovo.html">PRON CO VÔ</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../proncovo.html">Home</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="../mapa.html">Mapa</a></li>
+            </ul>
+        </nav>
+        <div class="user-info-container">
+            <div id="userInfo"><a href="./modulos/login/login.html">Entrar</a></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="profile-container">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <i class="bi bi-person-circle profile-icon"></i>
+                    <h2 id="profileName">Carregando...</h2>
+                </div>
+                <div class="profile-details">
+                    <h3>Detalhes da Conta</h3>
+                    <p><strong>Login:</strong> <span id="profileLogin"></span></p>
+                    <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+                </div>
+                <div class="profile-actions">
+                    <button class="btn btn-danger" onclick="logoutUser()">
+                        <i class="bi bi-box-arrow-right"></i> Sair da Conta
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-fixed">
+        <p>&copy; 2025 PRON CO VO - Feito com ❤️ em Belo Horizonte</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrente');
+            
+            if (usuarioCorrenteJSON) {
+                const usuario = JSON.parse(usuarioCorrenteJSON);
+                
+                // Preenche os campos específicos do novo HTML
+                document.getElementById('profileName').textContent = usuario.nome;
+                document.getElementById('profileLogin').textContent = usuario.login;
+                document.getElementById('profileEmail').textContent = usuario.email;
+                
+            } else {
+                // Se não estiver logado, redireciona para a página de login
+                // O caminho precisa ser relativo à localização atual do perfil.html
+                window.location.href = "./login/login.html"; 
+            }
+        });
+    </script>
+</body>
+</html>

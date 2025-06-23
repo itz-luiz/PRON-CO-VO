@@ -1,0 +1,308 @@
+/* styles-mapa.css */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.map-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  /* deslocado para a direita para não cobrir + e - do Leaflet */
+  z-index: 1100;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  user-select: none;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  /* escondida inicialmente */
+  width: 280px;
+  height: 100%;
+  background-color: #2c3e50;
+  color: white;
+  overflow-y: auto;
+  transition: left 0.3s ease;
+  z-index: 1200;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+body.sidebar-open .sidebar {
+  left: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-header h3 {
+  margin: 0;
+}
+
+.close-btn {
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.menu-item {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.menu-item:hover {
+  background-color: #34495e;
+}
+
+.category-filter {
+  display: none;
+  margin-top: 10px;
+}
+
+.category-filter h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.category-filter-item {
+  margin-bottom: 8px;
+}
+
+.category-filter-item label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.crud-modal {
+  display: none;
+  position: fixed;
+  z-index: 1300;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 60px;
+  box-sizing: border-box;
+}
+
+.crud-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px 30px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 480px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.crud-content h2,
+.crud-content h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.crud-content input[type="text"],
+.crud-content select {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 8px 0 16px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.crud-content button[type="submit"] {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.crud-content button[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+.crud-content .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  font-size: 28px;
+  color: #888;
+  cursor: pointer;
+  user-select: none;
+}
+
+#equipamentosList {
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  border-top: 1px solid #ccc;
+}
+
+#equipamentosList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+#equipamentosList li div button {
+  margin-left: 8px;
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.2s ease;
+}
+
+#equipamentosList li div button:hover {
+  background-color: #c0392b;
+}
+
+#equipamentosList li div button:first-child {
+  background-color: #3498db;
+}
+
+#equipamentosList li div button:first-child:hover {
+  background-color: #2980b9;
+}
+
+.leaflet-control.legend {
+  background: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.4;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  max-width: 180px;
+  user-select: none;
+}
+
+.leaflet-control.legend h4 {
+  margin: 0 0 8px 0;
+  font-weight: bold;
+}
+
+.leaflet-control.legend div {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.leaflet-control.legend i {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.custom-icon div {
+  transition: box-shadow 0.3s ease;
+}
+
+.custom-icon div:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Botão Voltar */
+.return-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 1100;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  user-select: none;
+}
+
+.return-btn:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 240px;
+    left: -240px;
+  }
+
+  body.sidebar-open .sidebar {
+    left: 0;
+  }
+
+  .menu-toggle {
+    left: 20px;
+  }
+
+  .return-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}

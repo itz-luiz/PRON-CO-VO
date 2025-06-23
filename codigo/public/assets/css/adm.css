@@ -1,0 +1,90 @@
+/* assets/css/admin.css */
+@import url("./base.css");
+
+body {
+
+    background-color: #f0f2f5; /* Um fundo um pouco diferente para a área de ADM */
+}
+
+.admin-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 900px; /* Largura um pouco maior */
+}
+
+h1 {
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.lead {
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+.admin-section h2 {
+    color: #007bff;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 8px;
+}
+
+.admin-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fefefe;
+    font-size: 0.95rem;
+    color: #495057;
+}
+
+.admin-list-item span {
+    flex-grow: 1; /* Permite que o texto ocupe o espaço */
+    margin-right: 15px;
+    word-break: break-word; /* Quebra palavras longas */
+}
+
+.admin-actions .btn {
+    margin-left: 8px;
+    padding: 5px 10px;
+    font-size: 0.85rem;
+}
+
+.alert-info, .alert-danger {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 20px;
+    }
+    .admin-list-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .admin-list-item span {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .admin-actions {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .admin-actions .btn {
+        flex-grow: 1;
+        margin: 0 5px;
+    }
+}

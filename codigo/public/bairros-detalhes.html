@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PronCoVô - Detalhes do Bairro</title>
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/bairros-detalhes.css">
+</head>
+
+<body>
+  <header>
+    <div class="titulo">
+      <h1><a href="proncovo.html">PRON CO VÔ</a></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="proncovo.html">Home</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="mapa.html">Mapa</a></li>
+      </ul>
+    </nav>
+    <div class="user-info-container">
+      <div id="userInfo"><a href="modulos/login/login.html">Entrar</a></div>
+    </div>
+  </header>
+
+  <main class="detalhes-container">
+    <div class="voltar-container">
+      <button onclick="history.back()" class="btn-voltar">
+        <i class="bi bi-arrow-left-circle"></i> Voltar
+      </button>
+    </div>
+
+    <section class="bairro-info">
+      <h1 id="bairro-nome">Carregando...</h1>
+      <div class="info-grid">
+        <div class="info-item">
+          <h3>Regional:</h3>
+          <p id="bairro-regional">-</p>
+        </div>
+        <div class="info-item">
+          <h3>População Aproximada:</h3>
+          <p id="bairro-populacao">-</p>
+        </div>
+        <div class="info-item">
+          <h3>Observações:</h3>
+          <p id="bairro-observacao">-</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="equipamentos">
+      <h2>Equipamentos Públicos</h2>
+      <div class="equipamentos-grid" id="equipamentos-container">
+        </div>
+    </section>
+
+    <section class="avaliacoes">
+      <h2>Avaliações do Bairro</h2>
+      <div class="avaliacoes-grid">
+        <div class="avaliacao-item">
+          <h3>Segurança</h3>
+          <div class="rating" id="seguranca-rating"></div>
+        </div>
+        <div class="avaliacao-item">
+          <h3>Escolas</h3>
+          <div class="rating" id="escolas-rating"></div>
+        </div>
+        <div class="avaliacao-item">
+          <h3>Saúde</h3>
+          <div class="rating" id="saude-rating"></div>
+        </div>
+        <div class="avaliacao-item">
+            <h3>Mobilidade</h3>
+            <div class="rating" id="mobilidade-rating"></div>
+        </div>
+        <div class="avaliacao-item">
+            <h3>Transporte</h3>
+            <div class="rating" id="transporte-rating"></div>
+        </div>
+        <div class="avaliacao-item">
+            <h3>Limpeza</h3>
+            <div class="rating" id="limpeza-rating"></div>
+        </div>
+        <div class="avaliacao-item">
+            <h3>Iluminação</h3>
+            <div class="rating" id="iluminacao-rating"></div>
+        </div>
+        <div class="avaliacao-item">
+            <h3>Lazer</h3>
+            <div class="rating" id="lazer-rating"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comentarios">
+      <h2>Comentários</h2>
+      <div class="comentarios-container" id="comentarios-container">
+        </div>
+      <button class="btn-adicionar" id="btn-adicionar-comentario">Adicionar Comentário</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PRON CO VO - Feito com ❤️ em Belo Horizonte</p>
+  </footer>
+
+  <script src="./assets/js/bairros-detalhes.js" defer></script>
+  <script src="./assets/js/login.js" defer></script>
+</body>
+</html>
