@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const API_URL = 'http://localhost:3000/banco-dados-bairros';
+    const API_URL = 'http://pron-co-vo.onrender.com/banco-dados-bairros';
 
     fetch(API_URL)
         .then(response => {

@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let todosBairros = []; // Array para guardar a lista de bairros
 
     // 1. Busca a lista de bairros uma única vez quando a página carrega
-    fetch('http://localhost:3000/banco-dados-bairros')
+    fetch('http://pron-co-vo.onrender.com/banco-dados-bairros')
         .then(response => response.json())
         .then(data => {
             todosBairros = data; // Armazena a lista

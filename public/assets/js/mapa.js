@@ -84,7 +84,7 @@ async function loadEquipamentosData() {
     allMarkers = allMarkers.filter(m => m.options.type !== 'equipamento');
 
     try {
-        const response = await fetch('http://localhost:3000/equipamentosPublicos');
+        const response = await fetch('http://pron-co-vo.onrender.com/equipamentosPublicos');
         const data = await response.json();
         data.forEach(item => {
             const props = item.properties;
@@ -107,7 +107,7 @@ async function loadTransporteData() {
     allMarkers = allMarkers.filter(m => m.options.type !== 'transporte');
 
     try {
-        const response = await fetch('http://localhost:3000/pontosDeTransporte');
+        const response = await fetch('http://pron-co-vo.onrender.com/pontosDeTransporte');
         const data = await response.json();
         data.forEach(ponto => {
             if (!ponto.latitude || !ponto.longitude) return;
@@ -190,7 +190,7 @@ for (const key in categories) {
 }
 
 async function fetchEquipamentos() {
-    const res = await fetch('http://localhost:3000/equipamentosPublicos');
+    const res = await fetch('http://pron-co-vo.onrender.com/equipamentosPublicos');
     const data = await res.json();
     renderEquipamentos(data);
 }
@@ -224,7 +224,7 @@ form.onsubmit = async function(e) {
             category: document.getElementById('category').value
         }
     };
-    const url = id ? `http://localhost:3000/equipamentosPublicos/${id}` : 'http://localhost:3000/equipamentosPublicos';
+    const url = id ? `http://pron-co-vo.onrender.com/equipamentosPublicos/${id}` : 'http://pron-co-vo.onrender.com/equipamentosPublicos';
     const method = id ? 'PUT' : 'POST';
 
     await fetch(url, { method, headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body) });
@@ -236,7 +236,7 @@ form.onsubmit = async function(e) {
 };
 
 window.editEquip = async function(id) {
-    const res = await fetch(`http://localhost:3000/equipamentosPublicos/${id}`);
+    const res = await fetch(`http://pron-co-vo.onrender.com/equipamentosPublicos/${id}`);
     const data = await res.json();
     document.getElementById('editId').value = id;
     document.getElementById('name').value = data.properties.name;
@@ -251,7 +251,7 @@ window.editEquip = async function(id) {
 
 window.deleteEquip = async function(id) {
     if (confirm('Tem certeza que deseja excluir este equipamento?')) {
-        await fetch(`http://localhost:3000/equipamentosPublicos/${id}`, { method: 'DELETE' });
+        await fetch(`http://pron-co-vo.onrender.com/equipamentosPublicos/${id}`, { method: 'DELETE' });
         fetchEquipamentos();
         loadEquipamentosData();
     }
