@@ -20,6 +20,13 @@
       "nome": "Rommel",
       "email": "rommel@gmail.com",
       "id": "3"
+    },
+    {
+      "login": "luiz",
+      "senha": "123",
+      "nome": "Luiz Felipe",
+      "email": "luiz@gmail.com",
+      "id": "4"
     }
   ],
   "eventos": [
